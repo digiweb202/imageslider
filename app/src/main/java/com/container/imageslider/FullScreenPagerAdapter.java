@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.jsibbold.zoomage.ZoomageView;
+
 public class FullScreenPagerAdapter extends RecyclerView.Adapter<FullScreenPagerAdapter.FullScreenPagerViewHolder> {
 
     private int[] images;
@@ -34,11 +36,11 @@ public class FullScreenPagerAdapter extends RecyclerView.Adapter<FullScreenPager
     }
 
     static class FullScreenPagerViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
+        ZoomageView imageView;
 
         public FullScreenPagerViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.touchImageView);
+            imageView = itemView.findViewById(R.id.myZoomageView);
         }
     }
 }
